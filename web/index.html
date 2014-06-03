@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8" />
+
+<title>Heart Monitor</title>
+<head>
+
+<script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/lib/smoothie.js"></script>
+
+<!--Project specific-->
+<script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+<style>
+    #main {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #editor{
+
+        height: 100%;
+        float: left;
+        padding-top: 0px;
+        padding-right: 20px;
+    }
+    #rrViewer{
+        overflow: hidden;
+        float: left;
+        vertical-align: middle;
+    }
+    #tabs{
+        height: 450px;
+    }
+    #responseViewer{
+    }
+    #qlmrequest {
+        height: auto;
+    }
+    fieldset {
+        border-radius: 5px;
+    }
+    #
+
+</style>
+
+</head>
+
+<body>
+<div id="main">
+    <h1>Heartbeat and Blood Oxygen Monitor</h1>
+    <div id=requestGeneration>
+        <div id="editor">
+            <fieldset>
+                <legend>Request Editor</legend>
+
+                <label>IP: </label></br>
+                <input type="text" id="ip" value="192.168.1.33">
+                </br>
+                <label>Port:</label></br>
+                <input type="text" id="port" value="50000">
+                </br>
+                <button id="webSocketStatus" onclick="openWebSocket()" style="width: 155px; margin-bottom: 10px">Connect</button>
+                </br>
+                </br>
+                </br>
+                <button  id="discoverButton"  onclick="objectDiscovery()" style="width: 185px; margin-bottom: 10px" disabled>Discover Objects</button>
+                </br>
+
+                <div id="availableObjects"></div>
+
+                </br>
+            </fieldset>
+        </div>
+
+
+        <div id=rrViewer>
+            <div id="responseViewer">
+                <fieldset id="responseField">
+                    <legend>Response Viewer</legend>
+                </fieldset>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html> 
+
+

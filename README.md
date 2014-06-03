@@ -1,9 +1,7 @@
 Ell-i-bare-metal-Hackathon
 ==========================
 Authors:
-Andrea Buda
-Manik Madhikermi
-Jose Granados
+Andrea Buda, Manik Madhikermi, Jose Granados.
 
 Project goal:
 Streaming pulsioximeter data to JavaScript clients via WebSocket server embedded on Ell-i.
